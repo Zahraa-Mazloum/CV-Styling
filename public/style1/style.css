@@ -1,0 +1,217 @@
+header{          
+            background-color: gray;
+            color:red;
+        }
+body, h1{
+            margin: 0;
+        }
+body>div{
+         margin: 0;
+        }
+    
+.contact-value, .contact-value a{
+            width: 60%;
+            text-decoration: none;
+            margin: 0;
+        }
+
+a {
+color: red;
+        }
+.contact-type{
+color:white;
+background-color: red;
+display: block;
+padding: 2px 10px;
+            width: 40%;
+          
+          
+        }
+.contact{
+        display: flex;
+        flex-direction: row;
+            margin: 0;
+        }
+    
+h3::before{
+    content: '';
+       display: inline-block;
+       width: 15px;
+       height: 15px;
+       -moz-border-radius: 7.5px;
+       -webkit-border-radius: 7.5px;
+       border-radius: 7.5px;
+       background-color: red;
+
+    
+}
+h3 {
+    border-bottom:1px solid rgba(128,128,128,0.5);
+    
+}
+.experience-date-separator{
+    color: red;
+}
+@media screen and (min-width : 840px){
+header{
+        margin: 0;
+        box-sizing: border-box;
+        padding-left: 10vw;
+       
+    }
+    header div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 40vw;
+    }
+
+    section{
+        width:calc(45vw - 20px);
+        margin:0;
+        padding: 5px 10px
+    
+    }
+    #contact{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        top:10px;
+        margin: 0;
+        left:50%;
+        width: 50%;
+        background-color: transparent;
+    }
+    #contact h3{
+        display: none;
+    }
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;    /*header styling*/
+
+    
+    }
+    
+    .contact-value, .contact-value a{
+        background-color: black;
+        width: 70%;
+        margin: 0;
+    }
+    .content{
+        width: 90vw;
+        margin: 0 auto;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+}
+    
+
+
+@media screen and (max-width:839px){
+    figure{
+        margin: 20px 0;
+    }
+
+    header{
+        box-sizing: border-box;
+        padding: 20px 40px;
+    }
+ 
+    .content{
+        box-sizing: border-box;
+        margin: 10px 40px;
+    }
+
+}
+
+.skills-primary::after{
+    content: 'Other';
+} 
+.skills-primary::before{
+    content: 'Main';
+}
+
+
+.skill{
+    background-color: rgb(172, 172, 172);
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    padding: 4px 5px;
+    color:white;
+}
+.skill p{
+    background-color: red;
+    display: block;
+}
+div[data-skill='9'] span{
+    background-color: red;
+    width: 90%;
+    display: block;
+    
+}
+div[data-skill='8'] span{
+    background-color: red;
+    width: 80%;
+    display: block;
+}
+div[data-skill='7'] span{
+    background-color: red;
+    width: 70%;
+    display: block;
+   
+}
+div[data-skill='6'] span{
+    background-color: red;
+    width: 60%;
+    display: block;
+}
+div[data-skill='5'] span{
+    background-color: red;
+    display: block;
+    width: 50%;
+   
+
+}
+
+.skills-secondary{
+    opacity: 0.5;
+}
+
+div[data-skill='4'] span{
+    background-color: red;
+    width: 40%;
+    display: block;
+}
+div[data-skill='3'] span{
+    background-color: red;
+    width: 30%;
+    display: block;
+}
+div[data-skill='2'] span{
+    background-color: red;
+    width: 20%;
+    display: block;
+}
+div[data-skill='1'] span{
+    background-color: red;
+    width: 10%;
+    display: block;
+}
+
+.experience-type, .experience-institution{
+    color:red;
+}
+.experience-institution::before{
+    content:'@ '
+}
+.experience-details, .experience-details::before{
+    color:rgb(172, 172, 172);
+    content: 'In ';
+}
